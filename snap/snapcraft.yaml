@@ -228,7 +228,7 @@ parts:
   libjxl:
     source: https://github.com/libjxl/libjxl.git
     source-depth: 1
-    source-tag: v0.10.2
+    source-tag: v0.10.3
     plugin: cmake
     build-environment:
       - LDFLAGS: ${LDFLAGS:+$LDFLAGS} -s
@@ -351,7 +351,7 @@ parts:
       - mesa-vulkan-drivers
       - xkb-data
     override-pull: |
-      QT=6.7.1
+      QT=6.8.1
 
       git clone -b v${QT} --depth=1 https://github.com/qt/qt5.git .
       git submodule update --init --recursive --depth=1 qtbase qtdeclarative qtwayland qtimageformats qtsvg qtshadertools
